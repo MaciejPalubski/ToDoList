@@ -1,0 +1,14 @@
+section {
+ 
+    
+    max-width: 1000px;
+    box-shadow: 0 0 5px #ddd;
+    margin: 10px auto;
+}
+
+.section__header {
+
+   
+    border-bottom: 1px solid #ddd;
+   
+}

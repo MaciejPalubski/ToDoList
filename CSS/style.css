@@ -4,3 +4,17 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  .body {
+    font-family: 'Lato', sans-serif;    
+    max-width: 100%;
+  }
+
+  .container {  
+    max-width: 1000px;
+    margin: 10px auto;
+  }
+
+  .header {
+    margin: 10px auto;
+  }
