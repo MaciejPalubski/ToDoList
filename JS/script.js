@@ -52,30 +52,25 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
-
     }
 
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+
+        if (newTaskContent === "") {
+            return;
+        }
+        addNewTask(newTaskContent)
+    };
     const init = () => {
         render();
 
         const form = document.querySelector(".js-form");
 
-        form.addEventListener("submit", (event) => {
-            event.preventDefault();
+        form.addEventListener("submit", onFormSubmit);
 
-            const newTaskContent = document.querySelector(".js-newTask").value.trim();
-
-            if (newTaskContent === "") {
-                return;
-            }
-
-            addNewTask(newTaskContent)
-        });
-
-
-
-    }
-
-
+    };
     init();
 }
